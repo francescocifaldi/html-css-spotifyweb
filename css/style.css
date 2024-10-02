@@ -1,11 +1,12 @@
+:root{
+    --mp_col: #282828;
+    --mc_col: #141922;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html{
-    font-family: sans-serif;
 }
 
 a{
@@ -15,4 +16,34 @@ a{
 
 ul, ol{
     list-style: none;
+}
+
+.debug{
+    border: 2px dotted red;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex-grow: 1;
+    display: flex;
+}
+
+.media-player{
+    height: 90px;
+    background-color: var(--mp_col);
+}
+
+.sidebar{
+    width: 230px;
+    background-color: black;
+}
+
+.main-content{
+    flex-grow: 1;
+    background-color: var(--mc_col);
 }
