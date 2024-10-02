@@ -73,15 +73,16 @@ button{
     align-items: center;
 }
 
-h1{
+.song-title{
     color: white;
-    font-size: large;
+    font-size: small;
     font-weight: bold;
 }
 
-h2{
+.song-artist{
     color: grey;
-    font-size: small;
+    font-size: x-small;
+    font-weight: normal;
 }
 
 .album img{
@@ -90,13 +91,9 @@ h2{
     display: block;
 }
 
-.song{
-    padding-right: 25px;
-}
-
 .info .buttons{
     display: flex;
-    gap: 13px;
+    gap: 5px;
     color: grey;
     font-size: 12px;
 }
@@ -106,6 +103,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .big-player .buttons{
@@ -114,6 +112,7 @@ h2{
     align-items: center;
     font-size: 14px;
     color: white;
+    padding-bottom: 12px;
 }
 
 .btn-big{
@@ -129,11 +128,47 @@ h2{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+
+.progress{
+    width: 90%;
+    background-color: rgba(255,255,255,0.5);
+    height: 5px;
+    border-radius: 9999px;
+}
+
+.time span{
+    color: white;
+    font-size: 8px;
+}
+
+.current-time, .total-time{
+    display: flex;
+    align-items: center;
+}
+
+.small-player{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.small-player .progress{
+    width: 120px;
 }
 
 /* MEDIA QUERIES */
 @media screen and (width <= 552px){
     .sidebar{
         width: 50px;
+    }
+}
+
+@media screen and (width <= 639px){
+    .info .buttons{
+        flex-direction: column;
     }
 }
