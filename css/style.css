@@ -3,6 +3,10 @@
     --mc_col: #141922;
 }
 
+html{
+    font-family: "Signika", sans-serif;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,13 +26,22 @@ ul, ol{
     border: 2px dotted red;
 }
 
+button{
+    background: none;
+    border: none;
+    color: currentColor;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 .container{
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.content{
+.body{
     flex-grow: 1;
     display: flex;
 }
@@ -36,14 +49,91 @@ ul, ol{
 .media-player{
     height: 90px;
     background-color: var(--mp_col);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11px;
 }
 
 .sidebar{
     width: 230px;
     background-color: black;
+    flex-shrink: 0;
 }
 
-.main-content{
+.content{
     flex-grow: 1;
     background-color: var(--mc_col);
+}
+
+.info{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+h2{
+    color: grey;
+    font-size: small;
+}
+
+.album img{
+    height: 42px;
+    aspect-ratio: 1/1;
+    display: block;
+}
+
+.song{
+    padding-right: 25px;
+}
+
+.info .buttons{
+    display: flex;
+    gap: 13px;
+    color: grey;
+    font-size: 12px;
+}
+
+.big-player{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-player .buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+}
+
+.btn-big{
+    border: 2px solid;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+@media screen and (width <= 552px){
+    .sidebar{
+        width: 50px;
+    }
 }
