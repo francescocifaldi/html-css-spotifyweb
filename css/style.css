@@ -247,6 +247,62 @@ button{
     padding-bottom: 10px;
 }
 
+.content{
+    position: relative;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+}
+
+.upgrade{
+    border: 1px solid var(--common_text_col);
+    border-radius: 9999px;
+    color: var(--common_text_col);
+    line-height: 1.5em;
+    padding: 0 5px;
+}
+
+.navbar{
+    position: absolute;
+    top:90px;
+    width: 100%;
+}
+
+.main-content{
+    margin-top: 200px;
+    overflow: scroll;
+}
+
+.card-container{
+    display: flex;
+    width: 100%;
+}
+
+.couple{
+    width: 33%;
+    display: flex;
+}
+
+.card{
+    width: 50%;
+    padding: 5px;
+}
+
+.card .image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: red;
+}
+
 /* MEDIA QUERIES */
 @media screen and (width <= 552px){
     .sidebar{
