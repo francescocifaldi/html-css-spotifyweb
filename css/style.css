@@ -272,18 +272,17 @@ button{
 }
 
 .navbar{
-    position: absolute;
-    top:90px;
     width: 100%;
+    padding-top: 90px;
 }
 
 .main-content{
-    margin-top: 200px;
     overflow: scroll;
 }
 
 .card-container{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -294,7 +293,7 @@ button{
 
 .card{
     width: 50%;
-    padding: 5px;
+    padding: 0 5px;
 }
 
 .card .image{
@@ -303,7 +302,27 @@ button{
     background-color: red;
 }
 
+.artisti-popolari .image{
+    border-radius: 50%;
+}
+
 /* MEDIA QUERIES */
+@media screen and (width <= 878px){
+    .couple{
+        width: 50%;
+    }
+}
+
+@media screen and (width <= 639px){
+    .info .buttons{
+        flex-direction: column;
+    }
+
+    .couple{
+        width: 100%;
+    }
+}
+
 @media screen and (width <= 552px){
     .sidebar{
         width: 50px;
@@ -329,11 +348,5 @@ button{
 
     .small-logo{
         display: block;
-    }
-}
-
-@media screen and (width <= 639px){
-    .info .buttons{
-        flex-direction: column;
     }
 }
