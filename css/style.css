@@ -214,6 +214,10 @@ button{
     gap: 5px;
 }
 
+.playlist li{
+    line-height: 2em;
+}
+
 .add{
     font-size: 40px;
 }
@@ -226,8 +230,8 @@ button{
 }
 
 .logo {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .big-logo{
@@ -243,13 +247,22 @@ button{
     margin: 5px 0;
 }
 
+.user .image{
+    background-color: var(--common_text_col);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .content{
     position: relative;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -282,6 +295,7 @@ button{
 .main-content{
     overflow-y: auto;
     flex-grow: 1;
+    height: 0;
 }
 
 .card-container{
