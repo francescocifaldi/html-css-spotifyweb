@@ -269,13 +269,13 @@ button{
 }
 
 .header{
-    width: 100%;
+    width: calc(100% - var(--sidebar_w));
     height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     top: 0;
 }
 
@@ -284,12 +284,7 @@ button{
     border-radius: 9999px;
     color: var(--common_text_col);
     line-height: 1.5em;
-    padding: 0 5px;
-}
-
-.navbar{
-    width: 100%;
-    padding-top: 90px;
+    padding: 0 25px;
 }
 
 .main-content{
@@ -330,6 +325,9 @@ button{
     align-content: center;
     justify-content: center;
     gap: 20px;
+    width: 100%;
+    padding-top: 90px;
+    line-height: 2em;
 }
 
 /* MEDIA QUERIES */
