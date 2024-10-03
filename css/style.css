@@ -249,7 +249,10 @@ button{
 
 .content{
     position: relative;
-    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .header{
@@ -277,7 +280,8 @@ button{
 }
 
 .main-content{
-    overflow: scroll;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .card-container{
@@ -304,6 +308,14 @@ button{
 
 .artisti-popolari .image{
     border-radius: 50%;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* MEDIA QUERIES */
