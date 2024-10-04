@@ -128,8 +128,9 @@ button{
     border-radius: 50%;
     height: 25px;
     width: 25px;
-    text-align: center;
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .time{
@@ -277,12 +278,13 @@ button{
     justify-content: flex-end;
     position: fixed;
     top: 0;
+    padding: 0 20px;
 }
 
 .upgrade{
-    border: 1px solid var(--common_text_col);
+    border: 1px solid white;
     border-radius: 9999px;
-    color: var(--common_text_col);
+    color: white;
     line-height: 1.5em;
     padding: 0 25px;
 }
@@ -297,6 +299,24 @@ button{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 40px;
+}
+
+.card-container img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.main-content .title-wrapper{
+    margin: 40px 0;
+    padding: 0 5px;
+}
+
+.main-content .title{
+    color: white;
+    font-weight: bolder;
 }
 
 .couple{
@@ -307,15 +327,20 @@ button{
 .card{
     width: 50%;
     padding: 0 5px;
+    position: relative;
 }
 
 .card .image{
     width: 100%;
     aspect-ratio: 1/1;
-    background-color: red;
 }
 
-.artisti-popolari .image{
+.card .description{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.artisti-popolari img{
     border-radius: 50%;
 }
 
@@ -328,6 +353,10 @@ button{
     width: 100%;
     padding-top: 90px;
     line-height: 2em;
+}
+
+.card-container:hover .hide{
+    display: inline-block;
 }
 
 /* MEDIA QUERIES */
