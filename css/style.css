@@ -403,4 +403,8 @@ button{
     .small-logo{
         display: block;
     }
+
+    .header{
+        width: calc(100% - 50px);
+    }
 }
